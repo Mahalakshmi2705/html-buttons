@@ -1,0 +1,300 @@
+
+<style>
+  .subscribe-button {
+    background-color: rgb(200, 0, 0);
+    color: azure;
+    height: 40px;
+    border: none;
+    width: 105px;
+    border-radius: 2px;
+    cursor: pointer;
+    margin-right: 8px;
+    transition: opacity 0.15s;
+    
+  }
+  .subscribe-button:hover{ 
+    opacity:0.8; 
+  }
+  .subscribe-button:active{
+    opacity:0.4;
+  }
+  .join-button {
+    background-color: white;
+    height: 40px;
+    width: 65px;
+    border-color: rgb(41, 118, 211);
+    color: rgb(41, 118, 211);
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: background-color 0.15s,color 0.15s;
+  }
+
+  .join-button:hover{
+    background-color: rgb(41, 118, 211);
+    color: white;
+  }
+  .join-button:active{
+    opacity: 0.7;
+  }
+
+  .tweet-button{
+    background-color: rgb(2, 158, 255);
+    color: white;
+    border: none;
+    height: 40px;
+    width: 70px;
+    border-radius: 18px;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+    margin-left: 8px;
+    transition: box-shadow 0.15s;
+  }
+  .tweet-button:hover{
+    box-shadow:   5px 5px 10px rgba(0,0,0,0.15);
+
+  }
+  .uber-button {
+    background-color: black;
+    color: white;
+    border: none;
+    height: 40px;
+    width: 110px;
+    cursor: pointer;
+    margin-left: 8px;
+    transition: opacity 0.15s;
+  }
+  .uber-button:hover{
+    opacity: 0.8;
+  }
+  .amazon-button{
+    background-color: rgb(255, 216, 20);
+    color: black;
+    border-radius: 18px;
+    width: 150px;
+    height: 30px;
+    border: none;
+    margin-left: 8px;
+    cursor: pointer;
+  }
+  .amazon-button:hover{
+    background-color: rgb(141, 132, 86);
+  }
+  
+  .github-button {
+    background-color: rgb(46, 164, 79);
+    color: white;
+    border: none;
+    height: 40px;
+    width: 90px;
+    font-weight: bold;
+    font-size: 15px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: box-shadow 0.15s;
+    margin-top: 10px;
+  }
+
+  .github-button:hover {
+    box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.15);
+  }
+  .get-started-button {
+    background-color: rgb(121, 82, 179);
+    color: white;
+    border: none;
+    height: 40px;
+    width: 110px;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 8px;
+  }
+
+  .download-button {
+    background-color: white;
+    color: rgb(108, 117, 125);
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(108, 117, 125);
+    height: 40px;
+    width: 100px;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 8px;
+  }
+  .linkedin-button{
+    background-color: rgb(10, 102, 194);
+    color: white;
+    font-weight: bold;
+    width: 250px;
+    height: 40px;
+    border-style: none;
+    border-radius: 30px;
+    cursor: pointer;
+    margin-left: 8px;
+  }
+  .save{
+    background-color: white;
+    color: rgb(10, 102, 194);
+    border-style: solid;
+    border-color: rgb(10, 102, 194);
+    border-width: 1px;
+    width: 60px;
+    height: 30px;
+    border-radius: 18px;
+    margin-top: 10px;
+    font-weight: bold;
+
+  }
+
+  .back-button {
+    margin-right: 8px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    font-size: 16px;
+  }
+
+  .search-result {
+    margin-left: 4px;
+    margin-right: 4px;
+    font-size: 18px;
+  }
+
+  .next-button {
+    margin-left: 8px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    font-size: 16px;
+  }
+
+  .stretch-button {
+    background-color: green;
+    color: white;
+    border: none;
+    font-size: 18px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 15px;
+    padding-right: 15px;
+    cursor: pointer;
+    transition: padding-top 1s,
+      padding-bottom 1s,
+      padding-left 1s,
+      padding-right 1s;
+  }
+
+  .stretch-button:hover {
+    padding-top: 18px;
+    padding-bottom: 18px;
+    padding-left: 36px;
+    padding-right: 36px;
+  }
+
+  .shadow-button{
+    background-color: green;
+    color: white;
+    border: none;
+    font-size: 18px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-left: 8px;
+    cursor: pointer;
+    box-shadow: 3px,3px,5px rbga(0,0,0,3);
+  }
+
+  .shadow-button:active{
+    margin-top: 3px;
+    margin-left: 3px;
+    box-shadow: none;
+  }
+
+  .num-button{
+    background-color: green;
+    color: white;
+    border: none;
+    font-size: 18px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-left: 10px;
+    margin-right: 10px;
+
+    margin-top: 10px;
+    transition: padding 0.15s,margin 0.15s;
+
+  }
+  .num-button:hover{
+    padding-left: 25px;
+    padding-right: 25px;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+</style>
+<button class="subscribe-button">
+  SUBSCRIBE
+</button>
+<button class="join-button">JOIN</button>
+
+<button class="tweet-butto">
+  Tweet
+</button>
+<button class="uber-button">
+  Resquest now
+</button>
+<button class="amazon-button">
+  Add to Cart
+</button>
+
+<button class="github-button">
+  Sign Up
+</button>
+
+<button class="get-started-button">
+  Get started
+</button>
+
+<button class="download-button">
+  Download
+</button>
+
+<button class="linkedin-button">
+  Apply on company website
+</button>
+
+<button class="save">
+  Save
+</button>
+
+<button class="back-button">Back</button>
+<a class="search-result" href="https://google.com">1</a>
+<a class="search-result" href="https://google.com">2</a>
+<a class="search-result" href="https://google.com">3</a>
+<a class="search-result" href="https://google.com">4</a>
+<a class="search-result" href="https://google.com">5</a>
+<button class="next-button">Next</button>
+
+<button class="stretch-button">
+  Stretch
+</button>
+
+<button class="shadow-button">
+  Shadow
+
+</button>
+
+<button class="num-button">
+  One
+</button>
+<button class=" num-button">
+  Two
+</button>
+<button class="num-button">
+  Three
+</button>
